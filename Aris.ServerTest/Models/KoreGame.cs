@@ -11,8 +11,12 @@ namespace Aris.ServerTest.Models
         public List<KoreGame> Games { get; set; }
     }
 
+
+
+
     public class KoreGame
     {
+
         public const string PlayLink = "play";
         public const string SelfLink = "_self";
 
@@ -20,6 +24,7 @@ namespace Aris.ServerTest.Models
         {
             Actions = new Dictionary<string, KoreLink>();
             Links = new Dictionary<string, KoreLink>();
+            Medal = new KoreMedal();
         }
 
         [JsonProperty("provider")]

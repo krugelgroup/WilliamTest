@@ -6,7 +6,6 @@ namespace Aris.ServerTest.ViewModels
 {
     public class GamesListViewModel
     {
-
         public IEnumerable<Models.KoreGame> Games { get; set; }
 
     }
