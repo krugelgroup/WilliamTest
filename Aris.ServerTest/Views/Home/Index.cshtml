@@ -38,7 +38,7 @@
         <tbody>
 
         
-        @foreach (var game in Model.Games)
+        @foreach (var game in Model.Games.OrderByDescending(x => x.Category).ThenBy(x => x.Platform).ThenBy(x => x.Name))
         {
         <tr>
             <td>
